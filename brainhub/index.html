@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Brainhub</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/playlist.css">
+    <script src="js/script.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div id="player">
+            <div class="fading"></div>
+
+            <div class="top">
+                <div class="triple">
+                    <div class="btn repeat1"></div>
+                    <div class="btn shuffle"></div>
+                    <div class="btn repeat4"></div>
+                </div>
+                <div class="btn menu" id="menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+            </div>
+            <div class="bottom">
+                <h1>Icona Pop</h1>
+                <p>Still Don't Know </p>
+                <div class="btn_bottom">
+                    <input type="range" value="40" class="range">
+                    <div class="triple triple_bottom">
+                        <div class="btn previous"></div>
+                        <canvas id="canvas" class="play" width="300" height="300"></canvas>
+                        <div class="btn round-button play"><i class="fa fa-play fa-2x" aria-hidden="true"></i></div>
+                        <div class="btn next"></div>
+                    </div>
+                    <div class="shfav">
+                        <div class="btn share"></div>
+                        <div class="btn fav"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="playlist">
+          <div class="top_playlist">
+            <div class="btn back"></div>
+            <h1>Playlist</h1>
+          </div>
+          <div class="song_playlist">
+            <div class="songs">
+
+            </div>
+          </div>
+          <div class="bottom bottom_playlist"></div>
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
