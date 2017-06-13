@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);html {
+  color: #2a2a2a;
+  background: #58DDAF;
+}
+
+body,
+html {
+  font-family: 'Open Sans';
+  background: url(../img/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#slider-app {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 30px 0 rgba(50, 50, 50, 0.35);
+  -moz-box-shadow: 0 0 30px 0 rgba(50, 50, 50, 0.35);
+  box-shadow: 0 0 30px 0 rgba(50, 50, 50, 0.35);
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#slider ul li {
+  float: left;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  background: #ccc;
+  line-height: 300px;
+}
+
+span {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  text-align: center;
+  background: #fff;
+  line-height: 40px;
+}
+
+span.control_next {
+  right: -40px;
+  border-radius: 5px 0 0 5px;
+}
+
+span.control_prev {
+  left: -40px;
+  border-radius: 0 5px 5px 0;
+}
+
+.footer {
+  text-align: center;
+  color: #fff;
+}
+
+.back {
+  width: 50px;
+  height: 50px;
+  background: #000;
+  align-self: center;
+  margin: auto;
+}
