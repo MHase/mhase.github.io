@@ -4,16 +4,28 @@
 <head>
     <meta charset="utf-8">
     <title>Maciej Sykuła</title>
+    <meta name="viewport" content="width=device-width" />
 </head>
 
 <body>
-  <!-- <div id="app"></div> -->
+  <div id="app"></div>
+
+  <!-- PRELOADER -->
+  <div class="preloader-container flex">
+      <div class="preloader">
+      	<div class="preloader-inner preloader-one"></div>
+      	<div class="preloader-inner preloader-two"></div>
+      	<div class="preloader-inner preloader-three"></div>
+      </div>
+  </div>
+
   <nav>
     <div class="menu flex">
       <ul>
+        <li><a href="#about">about</a></li>
         <li><a href="#projects">projects</a></li>
         <li><a href="#skills">skills</a></li>
-        <li><a href="#">love</a></li>
+        <li><a href="#love">love</a></li>
         <li><a href="#">contact</a></li>
       </ul>
     </div>
@@ -26,57 +38,75 @@
       <h3>Frontend Developer</h3>
     </div>
     <div class="name-background">
-
     </div>
-
-
   </div>
+
+  <div class="flex">
+    <h1>about</h1>
+  </div>
+  <div class="about-container flex" id="about">
+    <p class="split">
+      hi! my name is Maciek - junior frontend developer
+      <br>
+      since many years I was in love with coding, but not so long ago I was introduced to web development. short time later I fell in love like never before. better late than never ;)
+      <br>
+      right now I'm at the very end of my master's degree studies in computer science on Warsaw University of Technology, but even though I'm completetly self-taught frontend developer.
+    </p>
+    <p class="split">
+      most of my free time I spend on developing my knowlegde and skills reading articles, following tutorials and attending frontend meetups.
+      as you can see I'm still learning and gaining new knowledge, so don't be harsh on me ;)
+      <br>
+      also I'm open person so don't be shy and say <a href="mailto:sykula.maciek@gmail.com">hello</a> !
+    </p>
+  </div>
+
+
   <div class="flex">
     <h1>my projects</h1>
   </div>
   <div class="projects-container flex" id="projects">
     <div class="project brain flex">
-      <img src="../brain.png" alt="">
+      <img src="img/projects/brain.png" alt="">
       <div class="project-info">
         simple music player
       </div>
       <div class="project-link">
-        <a href="#"><img src="../octocat.png" alt="" width="30px"></a>
-        <a href="../projects/brainhub"><img src="../link.png" alt="" width="30px"></a>
+        <a href="#"><img src="img/projects/octocat.png" alt="" width="30px"></a>
+        <a href="../projects/brainhub"><img src="img/projects/link.png" alt="" width="30px"></a>
       </div>
     </div>
     <div class="project color flex">
-      <img src="../color.png" alt="">
+      <img src="img/projects/color.png" alt="">
       <div class="project-info">
         color picker without any major design
       </div>
       <div class="project-link">
-        <a href="#"><img src="../octocat.png" alt="" width="30px"></a>
-        <a href="../projects/color_picker"><img src="../link.png" alt="" width="30px"></a>
+        <a href="#"><img src="img/projects/octocat.png" alt="" width="30px"></a>
+        <a href="../projects/color_picker"><img src="img/projects/link.png" alt="" width="30px"></a>
       </div>
     </div>
     <div class="project cloud flex">
-      <img src="../cloud.png" alt="">
+      <img src="img/projects/cloud.png" alt="">
       <div class="project-info">
         cloud registration form
       </div>
       <div class="project-link">
-        <a href="#"><img src="../octocat.png" alt="" width="30px"></a>
-        <a href="../projects/clouds"><img src="../link.png" alt="" width="30px"></a>
+        <a href="#"><img src="img/projects/octocat.png" alt="" width="30px"></a>
+        <a href="../projects/clouds"><img src="img/projects/link.png" alt="" width="30px"></a>
       </div>
     </div>
     <div class="project slider flex">
-      <img src="../slider.png" alt="">
+      <img src="img/projects/slider.png" alt="">
       <div class="project-info">
         image slider for small library
       </div>
       <div class="project-link">
-        <a href="#"><img src="../octocat.png" alt="" width="30px"></a>
-        <a href="../projects/slider"><img src="../link.png" alt="" width="30px"></a>
+        <a href="#"><img src="img/projects/octocat.png" alt="" width="30px"></a>
+        <a href="../projects/slider"><img src="img/projects/link.png" alt="" width="30px"></a>
       </div>
     </div>
     <div class="project flex">
-      <img src="../more.png" alt="">
+      <img src="img/projects/more.png" alt="">
       <div class="project-info">
         more to come...
       </div>
@@ -87,22 +117,127 @@
   </div>
 
   <div class="flex">
-    <h1>my skills</h1>
+    <h1>skills I managed to develop</h1>
   </div>
   <div class="skills-container flex" id="skills">
-    <img src="../cv/html.png" alt="HTML" title="html5" class="skill-img">
-    <img src="../cv/nodejs.png" alt="node.js" title="node.js" class="skill-img">
-    <img src="../cv/css.png" alt="css3" title="css3" class="skill-img">
-    <img src="../cv/git.png" alt="git" title="git" class="skill-img">
-    <img src="../cv/react.png" alt="react" title="react" class="skill-img">
+    <div class="flex">
+      <div class="tooltip flex flex">
+        <img src="img/skills/js.jpg" alt="js" title="js" class="skill-img">
+        <span>Javascript</span>
+      </div>
+      <div class="tooltip flex">
+        <img src="img/skills/react.png" alt="react" title="react" class="skill-img">
+        <span>React</span>
+      </div>
+      <div class="tooltip flex">
+        <img src="img/skills/nodejs.png" alt="node.js" title="node.js" class="skill-img">
+        <span>Node.js</span>
+      </div>
+      <div class="tooltip flex">
+        <img src="img/skills/html.png" alt="HTML" title="html5" class="skill-img">
+        <span>HTML5</span>
+      </div>
+      <div class="tooltip flex">
+        <img src="img/skills/css.png" alt="css3" title="css3" class="skill-img">
+        <span>CSS3</span>
+      </div>
+      <div class="tooltip flex">
+        <img src="img/skills/git.png" alt="git" title="git" class="skill-img">
+        <span>GIT</span>
+      </div>
+      <div class="tooltip flex">
+        <img src="img/skills/php.png" alt="php" title="php" class="skill-img">
+        <span>PHP</span>
+      </div>
+      <div class="tooltip flex">
+        <img src="img/skills/doc.png" alt="doc" title="doc" class="skill-img">
+        <span>Documentation reading</span>
+      </div>
+    </div>
+  </div>
+  <div class="flex">
+    <h2>while using</h2>
+  </div>
+  <div class="flex" id="">
+    <div class="tooltip flex">
+      <img src="img/skills/use/es6.png" alt="es6" title="es6" class="skill-img">
+      <span>EcmaScript6</span>
+    </div>
+    <div class="tooltip flex">
+      <img src="img/skills/use/webpack.png" alt="webpack" title="webpack" class="skill-img">
+      <span>Webpack</span>
+    </div>
+    <div class="tooltip flex">
+      <img src="img/skills/use/sass.png" alt="sass" title="sass" class="skill-img">
+      <span>Sass</span>
+    </div>
+    <div class="tooltip flex">
+      <img src="img/skills/use/npm.png" alt="npm" title="npm" class="skill-img">
+      <span>NPM</span>
+    </div>
+    <div class="tooltip flex">
+      <img src="img/skills/use/ps.png" alt="ps" title="ps" class="skill-img">
+      <span>Photoshop</span>
+    </div>
+    <div class="tooltip flex imagination">
+      <img src="img/skills/use/lotus.png" alt="lotus" title="lotus" class="skill-img">
+      <span>Imagination!</span>
+    </div>
   </div>
 
   <div class="flex">
-    <h1>what i love</h1>
+    <h1>things I love</h1>
   </div>
   <div class="love-container flex" id="love">
-
+    <div class="love-item flex">
+      <img src="img/love/code.png" alt="" class="love-img">
+      <span>obviously, I love code</span>
+    </div>
+    <div class="love-item flex">
+      <img src="img/love/cafe.png" alt="" class="love-img">
+      <span>I compile coffee into code</span>
+    </div>
+    <div class="love-item flex">
+      <img src="img/love/dragon.png" alt="" class="love-img">
+      <span>fantasy in literature and movies</span>
+    </div>
+    <div class="love-item flex">
+      <img src="img/love/dumbbell.png" alt="" class="love-img">
+      <span>try to stay in shape and rum OCR from time to time</span>
+    </div>
+    <div class="love-item flex">
+      <img src="img/love/electronics.png" alt="" class="love-img">
+      <span>new phone? CPU? I already know that!</span>
+    </div>
+    <div class="love-item flex">
+      <img src="img/love/game.png" alt="" class="love-img">
+      <span>I'm not simple NPC with static answers!</span>
+    </div>
+    <div class="love-item flex">
+      <img src="img/love/wacom.png" alt="" class="love-img">
+      <span>digital painting, newest hobby</span>
+    </div>
+    <div class="love-item flex">
+      <img src="img/love/ai.png" alt="" class="love-img">
+      <span>soon machines with artificial intelligence will replace us</span>
+    </div>
+    <div class="love-item flex">
+      <img src="img/love/dice.png" alt="" class="love-img">
+      <span>let's check if it is your lucky toss</span>
+    </div>
+    <div class="love-item flex">
+      <img src="img/love/hammer_screw.png" alt="" class="love-img">
+      <img src="img/love/ruler_pencil.png" alt="" class="love-img">
+      <span>Do It Yourself!</span>
+    </div>
   </div>
+
+  <div class="flex">
+    <h2>and of course</h2>
+    <!-- <h3>while using</h3> -->
+  </div>
+
+
 
   <footer class="flex">
     <ul>

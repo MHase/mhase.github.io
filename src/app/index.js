@@ -15,7 +15,7 @@ class App extends React.Component {
   render() {
     return (
     <div>
-      <Project />
+      {/* <Project /> */}
     </div>
     );
   }
@@ -25,5 +25,12 @@ render(<App/>, document.getElementById('app'));
 
 
 $(document).ready(() => {
+	setTimeout((x = 500) => {
+		$('.preloader').fadeOut(x, () => {
+			$('.preloader-container').fadeOut(x, () => {
+
+			});
+		});
+	}, 1000);
 	
 });

@@ -1,7 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+@import url('handheld.scss');
 @import url('normalize.css');
+@import url('preloader.css');
+
+
 
 html {
   // font-family: 'Open Sans';
@@ -16,16 +20,28 @@ html, body {
   position: relative;
   color: #666666;
   height: 100%;
-  margin: 0;
   padding: 0;
 }
 
+.preloader-container {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  position: fixed;
+  z-index: 999;
+}
+.preloader {
+  // position: absolute;
+  // width: 200px;
+  // height: 200px;
+}
 
 h1, h4 {
   margin: 20px;
 }
 
 a {
+  color: #000000;
   text-decoration: none;
 }
 a:visited {
@@ -43,6 +59,7 @@ a:active {
   text-align: center;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .welcome {
@@ -93,7 +110,8 @@ a:active {
     margin: 10px;
     bottom: 0;
     right: 0;
-    // opacity: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
   }
 
   .project-info {
@@ -107,6 +125,10 @@ a:active {
   img {
     transition: all 0.5s ease-in-out;
   }
+}
+
+.project:hover .project-link {
+  opacity: 1;
 }
 
 .project:hover .project-info {
@@ -133,7 +155,7 @@ ul {
 }
 
 nav {
-  position: fixed;
+  // position: fixed;
   width: 100%;
   z-index: 1;
   .menu {
@@ -141,7 +163,6 @@ nav {
     right: 30px;
     position: absolute;
     li {
-      // float: left;
       padding: 15px;
     }
 
@@ -149,14 +170,18 @@ nav {
 }
 
 .skills-container {
-  .skill-img {
-    width: 80px;
-    filter: grayscale(100%);
-    transition: all 0.1s linear;
-  }
+  flex-wrap: wrap;
 }
 
-.skill-img:hover {
+.skill-img, .love-img, .tooltip {
+  width: 80px;
+  // filter: grayscale(100%);
+  transition: all 0.1s linear;
+  margin: 25px;
+}
+
+
+.skill-img:hover, .love-img:hover {
   filter: none;
   transform: scale(1.1);
 }
@@ -164,14 +189,107 @@ nav {
 footer {
   height: 100px;
   font-size: 12px;
+}
 
-  .pound {
-    animation: pound 1s infinite;
+.pound {
+  animation: pound 1s infinite;
+}
+
+@keyframes pound {
+  50% {
+    transform: scale(1.1);
   }
+}
 
-  @keyframes pound {
-    50% {
-      transform: scale(1.1);
-    }
+.split {
+  width: 500px;
+  font-size: 14px;
+  margin: 25px;
+  text-align: left;
+  line-height: 30px;
+  a {
+    color: #DC143C; //crimson
+  }
+}
+
+
+.love-item {
+  width: 150px;
+  margin: 25px;
+  span {
+    margin-top: 10px;
+  }
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip span{
+  opacity: 0;
+  bottom: -10px;
+  position: absolute;
+  transition: all 0.35s linear;
+}
+
+.tooltip:hover span {
+  opacity: 1;
+}
+
+.imagination {
+  -webkit-animation: vibrate 0.3s linear infinite both;
+          animation: vibrate 0.3s linear infinite both;
+}
+
+@-webkit-keyframes vibrate {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes vibrate {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
 }
