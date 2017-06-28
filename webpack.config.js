@@ -67,9 +67,9 @@ module.exports = {
         jQuery: 'jquery'
       }),
       new ExtractTextPlugin("css/[name].css"),
-      new HtmlWebpackPlugin({
-        template: 'index.html'
-      })
+      // new HtmlWebpackPlugin({
+      //   template: 'index.html'
+      // })
     ],
     watch: false
 };
