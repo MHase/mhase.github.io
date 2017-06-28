@@ -68,7 +68,7 @@ module.exports = {
       }),
       new ExtractTextPlugin("css/[name].css"),
       new HtmlWebpackPlugin({
-        template: 'src/index.html'
+        template: 'index.html'
       })
     ],
     watch: false
