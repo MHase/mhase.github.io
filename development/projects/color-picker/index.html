@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="dist/js/main.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="color_container shadow">
+        <div class="sliders">
+          <div class="red">
+            <input type="range" class="color_input red_slider" min="0" max="255">
+          </div>
+          <div class="green">
+            <input type="range" class="color_input green_slider" min="0" max="255" value="255">
+          </div>
+          <div class="blue">
+            <input type="range" class="color_input blue_slider" min="0" max="255">
+          </div>
+          <div class="opacity">
+            <input type="range" class="color_input opacity_slider" min="0" max="1" step="0.01" value="1">
+          </div>
+        </div>
+        <div class="preview">
+          <span>copied!</span>
+          <div class="color"></div>
+        </div>
+      </div>
+      <div class="">
+        <div class="rgb_container">
+          <input type="text" id="rgb" value="">
+        </div>
+        <div class="hex_container">
+          <input type="text" id="hex" value="">
+        </div>
+      </div>
+    </div>
+    <div class="color_box"></div>
+    <div class="invert_box"></div>
+
+  </div>
+
+  </body>
+</html>
