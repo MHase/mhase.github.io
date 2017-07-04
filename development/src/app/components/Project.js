@@ -3,10 +3,10 @@ import {render} from 'react-dom';
 
 
 let projects = [
-	{name:"brain", info:"simple music player", github_link:"https://github.com/MHase/brainhub_frontend", link:"projects/brainhub"},
-	{name:"color", info:"color picker without any major design", github_link:"https://github.com/MHase/color_picker", link:"projects/color-picker"},
-	{name:"cloud", info:"cloud registration form", github_link:"https://github.com/MHase/10clouds_frontend", link:"projects/clouds"},
-	{name:"slider", info:"image slider for small library", github_link:"https://github.com/MHase/Image-slider", link:"projects/slider"},
+	{name:"brain", info:"simple music player", github_link:"https://github.com/MHase/brainhub_frontend", link:"../projects/brainhub"},
+	{name:"color", info:"color picker without any major design", github_link:"https://github.com/MHase/color_picker", link:"../projects/color-picker"},
+	{name:"cloud", info:"cloud registration form", github_link:"https://github.com/MHase/10clouds_frontend", link:"../projects/clouds"},
+	{name:"slider", info:"image slider for small library", github_link:"https://github.com/MHase/Image-slider", link:"../projects/slider"},
 
 	{name:"more", info:"more to come...", github_link:"", link:""}
 
@@ -28,10 +28,10 @@ export class Project extends React.Component {
 							<div className="project-link">
 								{project.github_link != '' ?
 									<div>
-										<a href="#">
+										<a href={project.github_link}>
 											<img src={require('../../img/projects/octocat.png')} alt="" width="30px"/>
 										</a>
-										<a href="../projects/clouds">
+										<a href={project.link}>
 											<img src={require('../../img/projects/link.png')} alt="" width="30px"/>
 										</a>
 									</div>

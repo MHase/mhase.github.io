@@ -29,5 +29,29 @@ $(document).ready(() => {
 			});
 		});
 	}, 1000);
+  notifyMe("Don't be shy, say hello sykula.maciek@gmail.com ^^");
 
 });
+
+
+// DESKTOP NOTIFICATIONS
+function notifyMe(msg) {
+  // Sprawdzenie czy przeglądarka wspiera powiadomienia
+  if (!("Notification" in window)) {
+    alert("Ta przeglądarka nie wspiera powiadomień.");
+  }
+  // Sprawdzenie czy użytkownik zezwolił na wyświetlanie powiadomień
+  else if (Notification.permission === "granted") {
+    // Jeżeli wszystko się zgadza wyświetlamy powiadomienie
+    var notification = new Notification(msg);
+  }
+  // W innym przypadku musimy zapytać użytkownika o zgodę
+  else if (Notification.permission !== "denied") {
+    Notification.requestPermission(function (permission) {
+      // Jeżeli użytkownik wyraził zgodę - wyświetlamy powiadomienie
+      if (permission === "granted") {
+        var notification = new Notification(msg);
+      }
+    });
+  }
+}
