@@ -178,10 +178,20 @@ nav {
 }
 
 .skill-img, .love-img, .tooltip {
-  width: 80px;
+  // width: 150px;
   // filter: grayscale(100%);
   transition: all 0.1s linear;
-  margin: 25px;
+  // margin: 25px;
+  img{
+    margin: 25px;
+    width: 80px;
+  }
+}
+
+.skill-img {
+  img {
+    width: 80px;
+  }
 }
 
 
