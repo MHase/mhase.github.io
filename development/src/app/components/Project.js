@@ -7,6 +7,7 @@ let projects = [
 	{name:"color", info:"color picker without any major design", github_link:"https://github.com/MHase/color_picker", link:"../projects/color-picker"},
 	{name:"cloud", info:"cloud registration form", github_link:"https://github.com/MHase/10clouds_frontend", link:"../projects/clouds"},
 	{name:"slider", info:"image slider for small library", github_link:"https://github.com/MHase/Image-slider", link:"../projects/slider"},
+	{name:"netguru", info:"simple radio widget for junior developer", github_link:"https://github.com/MHase/netguru_frontend_junior", link:"../projects/netguru"},
 
 	{name:"more", info:"more to come...", github_link:"", link:""}
 
