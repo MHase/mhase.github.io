@@ -8,6 +8,7 @@ let projects = [
 	{name:"cloud", info:"cloud registration form", github_link:"https://github.com/MHase/10clouds_frontend", link:"../projects/clouds"},
 	{name:"slider", info:"image slider for small library", github_link:"https://github.com/MHase/Image-slider", link:"../projects/slider"},
 	{name:"netguru", info:"simple radio widget for junior developer", github_link:"https://github.com/MHase/netguru_frontend_junior", link:"../projects/netguru"},
+	{name:"el_passion", info:"frontend of app for tracking github issues", github_link:"https://github.com/MHase/el_passion_frontend", link:"../projects/el_passion"},
 
 	{name:"more", info:"more to come...", github_link:"", link:""}
 

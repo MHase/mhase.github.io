@@ -1,6 +1,6 @@
 
 
-@media all and (min-width: 300px) and (max-width: 500px) {
+@media all and (min-width: 320px) and (max-width: 768) {
 
     .preloader {
       width: 100%;
@@ -15,4 +15,10 @@
       top: 0;
     }
 
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    display: none;
+  }
 }
